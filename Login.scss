@@ -1,0 +1,75 @@
+/* Login Page Styles */
+.login-page {
+  background-color: #9f9595; /* Light orange background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form {
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #d49f92; /* White background for form */
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #ff9800; /* Orange border */
+
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    box-sizing: border-box; /* Ensure padding is included in width */
+
+    &:focus {
+      border-color: #ff9800; /* Highlight border on focus */
+      outline: none;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff9800; /* Orange button */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #fb8c00; /* Darker orange on hover */
+    }
+  }
+
+  a {
+    color: #2196f3; /* Blue link color */
+    text-decoration: none;
+    margin-left: 5px;
+
+    &:hover {
+      text-decoration: underline; /* Underline on hover */
+    }
+  }
+
+  br {
+    margin: 8px 0;
+  }
+}
+
+/* Error message styling */
+.error-message {
+  color: #d32f2f; /* Red text color */
+  background-color: #ffebee; /* Light red background */
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid #d32f2f;
+}

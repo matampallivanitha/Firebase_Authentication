@@ -1,0 +1,71 @@
+/* Home Page Styles */
+.home-page {
+  background-color: #80a374; // Light green background
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.home-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+  background-color: #ceecec; // White background
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #f44336; // Red border for logout action
+
+  h1 {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 12px 0;
+
+    strong {
+      color: #0d47a1;
+    }
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #d32f2f;
+    }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .home-container {
+    padding: 1.5rem;
+  }
+
+  .home-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-container p {
+    font-size: 1rem;
+  }
+
+  .home-container button {
+    width: 100%;
+  }
+}
